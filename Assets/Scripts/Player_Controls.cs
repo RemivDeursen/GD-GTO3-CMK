@@ -130,6 +130,9 @@ public class Player_Controls : MonoBehaviour
     public void OnRightButtonRelease(){IsRightButton = false;}
     public void OnJumpButton(){IsJumpButton = true;}
     public void OnJumpButtonRelease(){IsJumpButton = false;}
+    
+    public void OnAttackButton(){}
+    public void OnAttackButtonRelease(){GetComponent<Animator>().SetTrigger("Attack");}
 
     private void OnCollisionStay2D(Collision2D other)
     {

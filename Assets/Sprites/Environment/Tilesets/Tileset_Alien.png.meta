@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 05f0bf62dcfb65a4ebd0402151fc3c11
-timeCreated: 1508161823
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: Tileset_Alien_FloorCornerOuterLeft
@@ -97,7 +95,7 @@ TextureImporter:
     21300180: Tileset_Alien_WallLeftCornerFloor
     21300182: Tileset_Alien_WallRightCornerFloor
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -115,6 +113,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -137,19 +137,22 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -158,8 +161,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
-    maxTextureSize: 8192
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -168,8 +172,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
-    maxTextureSize: 8192
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -199,6 +204,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.23486}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d9124b8e60b25349a6b234083a4a329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor0
       rect:
@@ -217,6 +228,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.57227}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4374d67697b52394d9da51e7e5c72af2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor1
       rect:
@@ -235,6 +252,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.18555}
       tessellationDetail: 0
+      bones: []
+      spriteID: f2175d4049040ce4999eb2094c31be83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor2
       rect:
@@ -253,6 +276,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.7207}
       tessellationDetail: 0
+      bones: []
+      spriteID: cb6b57068e2b6dd4ebb260e800591f87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor3
       rect:
@@ -271,6 +300,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.49414}
       tessellationDetail: 0
+      bones: []
+      spriteID: f2dba5a37eabc4e46bb3f8ae7fe16029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor4
       rect:
@@ -289,6 +324,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 133.25977}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a55bb1d12c697248be8b30beaa2d9fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor5
       rect:
@@ -307,6 +348,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 131.57227}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1f63f1c1538b53f4bbb9e2949da6f16e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Floor6
       rect:
@@ -325,6 +372,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 133.18555}
       tessellationDetail: 0
+      bones: []
+      spriteID: 22e3ee6dd6b7ea2448c0eb372ac796e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorCornerOuterRight
       rect:
@@ -343,6 +396,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 133.60498}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e226ed5287c2274396ce7b4002e28e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft0
       rect:
@@ -363,6 +422,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: af2b85148b98eed40893961de6a895e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill0
       rect:
@@ -381,6 +446,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: ed37110ed4206eb4abf6bb92d900830c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill1
       rect:
@@ -399,6 +470,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 54bf6f42718c24343a38d50c27ffe1b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill2
       rect:
@@ -417,6 +494,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: a57185d71707465408e5307b04cb142c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill3
       rect:
@@ -435,6 +518,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1e3f82bb8f0178840b15e36f2fc72f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill4
       rect:
@@ -453,6 +542,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b01e9da3355f4a4ea316c7a28a9a4fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill5
       rect:
@@ -471,6 +566,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c9b11f32e43d314299e5f99f4439077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Fill6
       rect:
@@ -489,6 +590,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 81e65307799c913428146d70740b87ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight0
       rect:
@@ -507,6 +614,12 @@ TextureImporter:
         - {x: 254, y: -256}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 347bc94817dbf0443b9056d72ca7f61a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft1
       rect:
@@ -526,6 +639,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 93b24a71bdff8c44a89ad867b554ec6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling0
       rect:
@@ -545,6 +664,12 @@ TextureImporter:
         - {x: 256, y: -254}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 15354ed303421dd4b981582c63c23d34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling1
       rect:
@@ -564,6 +689,12 @@ TextureImporter:
         - {x: 256, y: -250}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: ba814033b3803d148a9c790bcdd7a834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight1
       rect:
@@ -582,6 +713,12 @@ TextureImporter:
         - {x: 254, y: -256}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b25cb23ac8e5340409dbefe6a4e6efcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft2
       rect:
@@ -600,6 +737,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 191b02c565b05cf458d106b21812f06d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_CeilingCornerOuterLeft
       rect:
@@ -621,6 +764,12 @@ TextureImporter:
         - {x: 256, y: -251}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c0b32cf4c2af2a40ac5258341e93f52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling2
       rect:
@@ -640,6 +789,12 @@ TextureImporter:
         - {x: 256, y: -254}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: a50e36827d42b9b42b2557ed37d95a26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling3
       rect:
@@ -660,6 +815,12 @@ TextureImporter:
         - {x: 256, y: -251}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: dbf92f758b0c86745ae12c64627d6af6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling4
       rect:
@@ -679,6 +840,12 @@ TextureImporter:
         - {x: 256, y: -255}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 15ddc01fabb11f041affc8931fbbe764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling5
       rect:
@@ -699,6 +866,12 @@ TextureImporter:
         - {x: 256, y: -252}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: e3af74585d187e94ea637a4ea8504a01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_Ceiling6
       rect:
@@ -718,6 +891,12 @@ TextureImporter:
         - {x: 256, y: -255}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: a54e719a9c11b8e419f12372ff7e41d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_CeilingCornerOuterRight
       rect:
@@ -739,6 +918,12 @@ TextureImporter:
         - {x: 255, y: 242}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: fbedf33b4fbe390408ae62a416d212af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight2
       rect:
@@ -761,6 +946,12 @@ TextureImporter:
         - {x: 254, y: -100}
         - {x: 229, y: 1}
       tessellationDetail: 0
+      bones: []
+      spriteID: bc6f0a630bb704c46a68bd2a24a47b51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft3
       rect:
@@ -780,6 +971,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b964657b9a25d00449a6b0b2fda24475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlock
       rect:
@@ -798,6 +995,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 133.94287}
       tessellationDetail: 0
+      bones: []
+      spriteID: b2623ac343789504aa8844fedc3e30d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorCornerInnerLeft0
       rect:
@@ -816,6 +1019,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130.71436}
       tessellationDetail: 0
+      bones: []
+      spriteID: 97ea78f7c5e8e084298d0eb8028c320b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight3
       rect:
@@ -834,6 +1043,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 127581e5f50b722448ad218f607fbf82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft4
       rect:
@@ -857,6 +1072,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 89c559cdf3d09754e815bf6a85144416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleBlock
       rect:
@@ -877,6 +1098,12 @@ TextureImporter:
         - {x: 256, y: -234}
         - {x: 256, y: 132.30225}
       tessellationDetail: 0
+      bones: []
+      spriteID: 49c7a5465496846479f87a1b5ef032f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorCornerInnerRight0
       rect:
@@ -895,6 +1122,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.72314}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7c3d8074214b302419d859e3918093cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight4
       rect:
@@ -913,6 +1146,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: cad9c418b78d8b641add7a8b49b57c79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft5
       rect:
@@ -932,6 +1171,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 72d0e5172f8906548ac6c7dbff7d41ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_LeftWallCorner
       rect:
@@ -951,6 +1196,12 @@ TextureImporter:
         - {x: 256, y: 241}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c030364a0b630e44a52d5e00e4bf9f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlock0
       rect:
@@ -969,6 +1220,12 @@ TextureImporter:
         - {x: 256, y: -255}
         - {x: 256, y: 133.53857}
       tessellationDetail: 0
+      bones: []
+      spriteID: d42ecd174e8fc8d4dbe48243b9f56ec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlock1
       rect:
@@ -987,6 +1244,12 @@ TextureImporter:
         - {x: -256, y: -255}
         - {x: 256, y: -255}
       tessellationDetail: 0
+      bones: []
+      spriteID: a84bef9f88dcc1a449fc8968fd17c31c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_RightWallCorner
       rect:
@@ -1007,6 +1270,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7d0d8bba5d1fea14a8528d70bd016956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight5
       rect:
@@ -1025,6 +1294,12 @@ TextureImporter:
         - {x: 254, y: -256}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5c5be3b443b460841be14aa94ec0bd27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeft6
       rect:
@@ -1044,6 +1319,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 831ab0dea076683498eaffe31a40ffcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlockLeft
       rect:
@@ -1062,6 +1343,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.08252}
       tessellationDetail: 0
+      bones: []
+      spriteID: 20c6ef33f34d7ed48a22003614e58680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlock2
       rect:
@@ -1080,6 +1367,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 132.2666}
       tessellationDetail: 0
+      bones: []
+      spriteID: d4636a7e8112e214dac29570622d2590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlock3
       rect:
@@ -1098,6 +1391,12 @@ TextureImporter:
         - {x: -256, y: -256}
         - {x: 256, y: -256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 88bf8dabc68bcc3469b0aaeef23c990a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_FloorSingleBlockRight
       rect:
@@ -1116,6 +1415,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 133.20557}
       tessellationDetail: 0
+      bones: []
+      spriteID: ab70ef4e1280cbe4f9d7bc1b6de4f74c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRight6
       rect:
@@ -1134,6 +1439,12 @@ TextureImporter:
         - {x: 254, y: -256}
         - {x: 254, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 20e6bfa846b3187499fe037465332eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_80
       rect:
@@ -1153,6 +1464,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 29cab3dbe9ebda94bb4233941ae65493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_89
       rect:
@@ -1172,6 +1489,12 @@ TextureImporter:
         - {x: 256, y: -254}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: cc1d56c1fd30162449f32919313b9841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnwall0
       rect:
@@ -1186,6 +1509,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d0ed10edd886b8b409bab4888e1128a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnwall1
       rect:
@@ -1200,6 +1529,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d9b783f8f9b7ada41ba43f2b1f45f344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnwall2
       rect:
@@ -1214,6 +1549,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9658ec6dcf861da409afa2b51d8a6c50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnwall3
       rect:
@@ -1228,6 +1569,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8ee4b4c08b54a03499e95c94a1322b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleBlockCornerLeft
       rect:
@@ -1242,6 +1589,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e858025b382736c45a7edd9b78963d52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleBlockCornerRight
       rect:
@@ -1256,6 +1609,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d11b09db912f0214e96f957be60cf527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_CeilingCornerFloorRight
       rect:
@@ -1270,6 +1629,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 347994735620a4342bff791614a9b87c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_CeilingCornerFloorLeft
       rect:
@@ -1284,6 +1649,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c22b54a7d748914a92acd6fecf8f790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnCentreCeiling
       rect:
@@ -1298,6 +1669,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4afa16e4de747e443ac66a28d0f3a9b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnCentreCorners
       rect:
@@ -1312,6 +1689,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 33dd442361dd0a1458181c83fac159bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_SingleColumnBottom
       rect:
@@ -1326,6 +1709,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 976d92e5d17401343a7e7043a0e2742b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallLeftCornerFloor
       rect:
@@ -1340,6 +1729,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e75598b6a0b2f9d49ad4b5042969030d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Alien_WallRightCornerFloor
       rect:
@@ -1354,9 +1749,23 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02066517dad89154bb43d719552aa8f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

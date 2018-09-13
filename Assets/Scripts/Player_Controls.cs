@@ -11,7 +11,7 @@ public class Player_Controls : MonoBehaviour
     private Vector2 BeginSwipe;
     private Vector2 EndSwipe;
     private bool isMoving;
-
+    private int keyCount = 0;
     public Vector2 velocity;
     private Rigidbody2D rb2D;
     private Sprite mySprite;
@@ -70,7 +70,8 @@ public class Player_Controls : MonoBehaviour
     private float maxSpeed = 5;
     private void Movement()
     {
-        if(IsJumpButton && velocity.y == 0){
+        if (IsJumpButton && velocity.y == 0)
+        {
             if (IsLeftButton)
             {
                 if (velocity.x >= -maxSpeed)
@@ -88,7 +89,8 @@ public class Player_Controls : MonoBehaviour
             velocity.y = 15;
             IsJumpButton = false;
         }
-        else if(!IsJumpButton){
+        else if (!IsJumpButton)
+        {
             if (IsLeftButton)
             {
                 if (velocity.x >= -maxSpeed)
@@ -115,37 +117,53 @@ public class Player_Controls : MonoBehaviour
                 velocity.x += speed;
             }
         }
-        if(isGrounded && velocity.y < 0){
+        if (isGrounded && velocity.y < 0)
+        {
             velocity.y = 0;
         }
-        else if(!isGrounded && velocity.y > -10){
+        else if (!isGrounded && velocity.y > -10)
+        {
             velocity.y -= 1f;
         }
         rb2D.MovePosition(rb2D.position + velocity * Time.deltaTime);
     }
 
-    public void OnLeftButton(){IsLeftButton = true;}
-    public void OnLeftButtonRelease(){IsLeftButton = false;}
-    public void OnRightButton(){IsRightButton = true;}
-    public void OnRightButtonRelease(){IsRightButton = false;}
-    public void OnJumpButton(){IsJumpButton = true;}
-    public void OnJumpButtonRelease(){IsJumpButton = false;}
-    
-    public void OnAttackButton(){}
-    public void OnAttackButtonRelease(){GetComponent<Animator>().SetTrigger("Attack");}
+    public void OnLeftButton() { IsLeftButton = true; }
+    public void OnLeftButtonRelease() { IsLeftButton = false; }
+    public void OnRightButton() { IsRightButton = true; }
+    public void OnRightButtonRelease() { IsRightButton = false; }
+    public void OnJumpButton() { IsJumpButton = true; }
+    public void OnJumpButtonRelease() { IsJumpButton = false; }
+
+    public void OnAttackButton() { }
+    public void OnAttackButtonRelease() { GetComponent<Animator>().SetTrigger("Attack"); }
 
     private void OnCollisionStay2D(Collision2D other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Level")){
+        if (other.gameObject.layer == LayerMask.NameToLayer("Level"))
+        {
             Debug.Log("Enter");
             isGrounded = true;
         }
     }
     private void OnCollisionExit2D(Collision2D other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Level")){
+        if (other.gameObject.layer == LayerMask.NameToLayer("Level"))
+        {
             Debug.Log("Exit");
             isGrounded = false;
+        }
+    }
+    public Text keyCountText;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.GetComponent<Pickupable>() != null){
+            if(other.GetComponent<Pickupable>().currentType == Pickupable.ItemType.Key){
+                Destroy(other.gameObject);
+                keyCount = 1;
+                keyCountText.text = keyCount.ToString();
+                return;
+            }
         }
     }
 }

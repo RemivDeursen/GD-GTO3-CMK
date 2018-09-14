@@ -5,26 +5,23 @@ using UnityEngine.UI;
 
 public class Player_Controls : MonoBehaviour
 {
-
+[SerializeField]
     public Text touchText;
     public Text swipeText;
     private Vector2 BeginSwipe;
     private Vector2 EndSwipe;
     private bool isMoving;
-    private int keyCount = 0;
     public Vector2 velocity;
     private Rigidbody2D rb2D;
     private Sprite mySprite;
     private SpriteRenderer sr;
     public bool isGrounded = false;
-    // Use this for initialization
+    public Player_Data player_Data;
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
 
         velocity = new Vector2(0, 0);
-
-        //transform.position = new Vector3(-2.0f, -2.0f, 0.0f);
     }
 
     // Update is called once per frame
@@ -68,9 +65,10 @@ public class Player_Controls : MonoBehaviour
     private bool IsJumpButton;
     private float speed = 2.5f;
     private float maxSpeed = 5;
+    private float timer = 0;
     private void Movement()
     {
-        if (IsJumpButton && velocity.y == 0)
+        if (IsJumpButton && isGrounded && velocity.y == 0)
         {
             if (IsLeftButton)
             {
@@ -128,15 +126,42 @@ public class Player_Controls : MonoBehaviour
         rb2D.MovePosition(rb2D.position + velocity * Time.deltaTime);
     }
 
-    public void OnLeftButton() { IsLeftButton = true; }
-    public void OnLeftButtonRelease() { IsLeftButton = false; }
-    public void OnRightButton() { IsRightButton = true; }
-    public void OnRightButtonRelease() { IsRightButton = false; }
+    public void OnLeftButton()
+    {
+        IsLeftButton = true;
+        player_Data.playerSword.GetComponent<Animator>().SetBool("Forward", false);
+        GetComponent<SpriteRenderer>().flipX = true;
+        GetComponent<Animator>().SetTrigger("IsRunning");
+    }
+    public void OnLeftButtonRelease()
+    {
+        IsLeftButton = false;
+        GetComponent<Animator>().SetTrigger("IsIdle");
+    }
+    public void OnRightButton()
+    {
+        IsRightButton = true;
+        player_Data.playerSword.GetComponent<Animator>().SetBool("Forward", true);
+        GetComponent<SpriteRenderer>().flipX = false;
+        GetComponent<Animator>().SetTrigger("IsRunning");
+    }
+    public void OnRightButtonRelease()
+    {
+        IsRightButton = false;
+        GetComponent<Animator>().SetTrigger("IsIdle");
+    }
+
     public void OnJumpButton() { IsJumpButton = true; }
     public void OnJumpButtonRelease() { IsJumpButton = false; }
 
-    public void OnAttackButton() { }
-    public void OnAttackButtonRelease() { GetComponent<Animator>().SetTrigger("Attack"); }
+    public void OnAttackButton()
+    {
+        player_Data.playerSword.GetComponent<SpriteRenderer>().enabled = true;
+        player_Data.playerSword.GetComponent<PolygonCollider2D>().enabled = true;
+    }
+    public void OnAttackButtonRelease()
+    {
+    }
 
     private void OnCollisionStay2D(Collision2D other)
     {
@@ -152,18 +177,6 @@ public class Player_Controls : MonoBehaviour
         {
             Debug.Log("Exit");
             isGrounded = false;
-        }
-    }
-    public Text keyCountText;
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.GetComponent<Pickupable>() != null){
-            if(other.GetComponent<Pickupable>().currentType == Pickupable.ItemType.Key){
-                Destroy(other.gameObject);
-                keyCount = 1;
-                keyCountText.text = keyCount.ToString();
-                return;
-            }
         }
     }
 }
